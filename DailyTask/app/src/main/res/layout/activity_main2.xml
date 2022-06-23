@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="351dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="30dp"
+        android:hint=" Enter Reminder Message:-"
+        android:textSize="12sp" />
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="311dp"
+        android:layout_height="361dp"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/setBtn"
+        android:layout_width="202dp"
+        android:layout_height="wrap_content"
+        android:paddingRight="4dp"
+        android:text="SET NOTIFICATION TIME"
+        app:backgroundTint="#F5440C" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="59dp"
+        android:layout_height="44dp"
+        app:srcCompat="@drawable/clock" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

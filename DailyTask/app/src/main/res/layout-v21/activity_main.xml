@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:hapticFeedbackEnabled="true">
+
+
+    <TextView
+        android:id="@+id/tasksText"
+        android:layout_width="match_parent"
+        android:layout_height="139dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="-2dp"
+
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="16dp"
+        android:background="#3667E5"
+        android:gravity="center"
+        android:text="Task To Be Done...."
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#26FFFFFF"
+        android:textColorHint="#F4511E"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/tasksRecyclerView"
+        android:layout_width="411dp"
+        android:layout_height="641dp"
+        android:layout_below="@id/tasksText"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="-3dp"
+        android:layout_marginTop="-17dp"
+        android:background="#DBDEF4"
+        android:nestedScrollingEnabled="true"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:src="@drawable/ic_baseline_add"
+
+        app:backgroundTint="#5BDB60"
+        app:rippleColor="#F4511E" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="148dp"
+        android:layout_height="66dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="127dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="136dp"
+        android:layout_marginRight="136dp"
+        android:layout_marginBottom="662dp"
+        app:srcCompat="@drawable/logo" />
+
+</RelativeLayout>

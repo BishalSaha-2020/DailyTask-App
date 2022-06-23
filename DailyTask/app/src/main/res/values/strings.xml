@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Daily Task</string>
+    <string name="tasks" />
+    <string name="save" />
+    <string name="new_task" />
+    <string name="task_to_be_done">Task To Be Done......</string>
+</resources>
